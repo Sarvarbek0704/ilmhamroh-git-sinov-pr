@@ -1,0 +1,44 @@
+name: Xato haqida xabar
+description: Saytda nimadir noto'g'ri ishlayapti
+title: "[Xato]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Rahmat! Xatoni tez topishimiz uchun maydonlarni to'ldiring.
+  - type: input
+    id: sahifa
+    attributes:
+      label: Qaysi sahifa?
+      placeholder: masalan, menyu/
+    validations:
+      required: true
+  - type: textarea
+    id: qadamlar
+    attributes:
+      label: Xatoni qanday takrorlash mumkin?
+      description: Qadamma-qadam yozing.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: dropdown
+    id: qurilma
+    attributes:
+      label: Qurilma
+      options:
+        - Telefon
+        - Planshet
+        - Kompyuter
+    validations:
+      required: true
+  - type: checkboxes
+    id: tekshiruv
+    attributes:
+      label: Tekshiruv
+      options:
+        - label: Shunga o'xshash ochiq issue yo'qligini tekshirdim
+          required: true
